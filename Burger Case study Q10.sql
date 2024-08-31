@@ -1,3 +1,5 @@
+--------------------------------------- DATA ------------------------------------------------
+
 create database Burger_case;
 
 CREATE TABLE runners (
@@ -112,7 +114,9 @@ VALUES
   (10, 'Salami'),
   (11, 'Tomatoes'),
   (12, 'Tomato Sauce');
-  
+
+
+--------------------------------------------  TASKS ----------------------------------------------------
   
  --  1. How many pizzas were ordered?
  
@@ -179,17 +183,6 @@ FROM customer_orders
 GROUP BY TO_CHAR(order_time, 'Day')
 ORDER BY day_of_week;
 
-
-SELECT 
-    TO_CHAR(order_time, 'Day') AS day_of_week,
-    COUNT(*) AS total_orders
-FROM 
-    customer_orders
-GROUP BY 
-    TO_CHAR(order_time, 'Day')
-ORDER BY 
-    day_of_week;
-    
     
   
 
